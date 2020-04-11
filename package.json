@@ -1,6 +1,6 @@
 {
-    "title": "Grayscale",
-    "name": "startbootstrap-grayscale",
+    "title": "UNSW Co-op Society",
+    "name": "coopsoc",
     "version": "5.0.9",
     "scripts": {
         "start": "node_modules/.bin/gulp watch"
@@ -14,19 +14,18 @@
         "theme",
         "template"
     ],
-    "homepage": "https://startbootstrap.com/template-overviews/grayscale",
+    "homepage": "https://coopsoc.github.io/coopsoc/",
     "bugs": {
-        "url": "https://github.com/BlackrockDigital/startbootstrap-grayscale/issues",
-        "email": "feedback@startbootstrap.com"
+        
     },
     "license": "MIT",
-    "author": "Start Bootstrap",
+    "author": "Coopsoc",
     "contributors": [
-        "David Miller (http://davidmiller.io/)"
+        "Vincent Chen"
     ],
     "repository": {
         "type": "git",
-        "url": "https://github.com/BlackrockDigital/startbootstrap-grayscale.git"
+        "url": "https://github.com/coopsoc/coopsoc.git"
     },
     "dependencies": {
         "@fortawesome/fontawesome-free": "5.10.2",
