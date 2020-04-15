@@ -1,185 +1,97 @@
-<!DOCTYPE html>
-<html lang="en">
+    <!DOCTYPE html>
+    <html lang="en">
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
-  <meta name="author" content="">
+    <head>
+        <!-- Bootstrap core CSS -->
+        <link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-  <title>UNSW Co-op Society</title>
-  <link rel="icon" href="img/logo_small.png" type="image/icon type">
+        <!-- Custm fonts for this template -->
+        <link href="/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Space+Mono&display=swap" rel="stylesheet">
 
-  <!-- Bootstrap core CSS -->
-  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <!-- Custom styles for this template -->
+        <link href="/css/grayscale.css" rel="stylesheet"> 
 
-  <!-- Custom fonts for this template -->
-  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Space+Mono&display=swap" rel="stylesheet">
+        <!-- jQuery script for common navbar -->
+        <script src="/vendor/jquery/jquery.min.js"></script>
+        <script>
+        $(document).ready(function(){
+            $('#mainNav').load("navbar.html");
+            $('#footer').load("footer.html");
+        });
+        </script>
+    </head>
 
-  <!-- Custom styles for this template -->
-  <link href="css/grayscale.css" rel="stylesheet"> 
-</head>
+    <body id="page-top">
+        <!-- Navigation -->
+        <div id="mainNav"></div>
 
-<body id="page-top">
-  <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
-    <div class="container">
-      <a class="navbar-brand js-scroll-trigger" href="#page-top"><img src='img/logo_small.png' width=60px></a>
-      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        Menu
-        <i class="fas fa-bars"></i>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="about">The Team</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="publications">Publications</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-  <!-- Header -->
-  <header class="masthead">
-    <div class="container d-flex h-100 align-items-center">
-      <div class="mx-auto text-center">
-        <h1 class="mx-auto my-0 text-uppercase">UNSW Co-op Society</h1>
-        <h2 class="mx-auto">A society for co-ops, by co-ops.</h2>
-        <a href="#events" class="btn btn-primary js-scroll-trigger">Our Events</a>
-      </div>
-    </div>
-  </header>
-
-  <!-- Events Section -->
-  <section id="events" class="projects-section bg-light">
-    <div class="container">
-      <!-- Featured Events Row -->
-      <div class="row align-items-center no-gutters mb-4 mb-lg-5">
-        <div class="col-xl-8 col-lg-7">
-          <img class="img-fluid mb-3 mb-lg-0" src="img/camp.jpg" alt="">
-        </div>
-        <div class="col-xl-4 col-lg-5">
-          <div class="featured-text text-center text-lg-left">
-            <h4>First Years Camp</h4>
-            <p class="text-black-50 mb-0">An annual event providing first year students the opportunity to have fun and create lasting social connections.</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Event One Row -->
-      <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
-        <div class="col-lg-6">
-          <img class="img-fluid" src="img/ball.jpg" alt="">
-        </div>
-        <div class="col-lg-6">
-          <div class="bg-black text-center h-100 project">
-            <div class="d-flex h-100">
-              <div class="project-text w-100 my-auto text-center text-lg-left">
-                <h4 class="text-white">Ball</h4>
-                <p class="mb-0 text-white-50">Come for a fancy night and a great time.</p>
-                <hr class="d-none d-lg-block mb-0 ml-0">
-              </div>
+        <!-- Header -->
+        <header class="masthead">
+        <div class="container d-flex h-100 align-items-center">
+            <div class="mx-auto text-center">
+            <h1 class="mx-auto my-0 text-uppercase">UNSW Co-op Society</h1>
+            <h2 class="mx-auto">A society for co-ops, by co-ops.</h2>
+            <a href="#events" class="btn btn-primary js-scroll-trigger">Our Events</a>
             </div>
-          </div>
         </div>
-      </div>
+        </header>
 
-      <!-- Event Two Row 
-      <div class="row justify-content-center no-gutters">
-        <div class="col-lg-6">
-          <img class="img-fluid" src="img/pubcrawl.webp" alt="">
-        </div>
-        <div class="col-lg-6 order-lg-first">
-          <div class="bg-black text-center h-100 project">
-            <div class="d-flex h-100">
-              <div class="project-text w-100 my-auto text-center text-lg-right">
-                <h4 class="text-white">Pub Crawl</h4>
-                <p class="mb-0 text-white-50">Fun night out with friends!</p>
-                <hr class="d-none d-lg-block mb-0 mr-0">
-              </div>
+        <!-- Events Section -->
+        <section id="events" class="projects-section bg-light">
+            <div class="container">
+                <!-- Featured Events Row -->
+                <div class="row align-items-center no-gutters mb-4 mb-lg-5">
+                    <div class="col-xl-8 col-lg-7">
+                        <img class="img-fluid mb-3 mb-lg-0" src="img/camp.jpg" alt="">
+                    </div>
+                    <div class="col-xl-4 col-lg-5">
+                        <div class="featured-text text-center text-lg-left">
+                            <h4>First Years Camp</h4>
+                            <p class="text-black-50 mb-0">An annual event providing first year students the opportunity to have fun and create lasting social connections.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Event One Row -->
+                <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
+                    <div class="col-lg-6">
+                        <img class="img-fluid" src="img/ball.jpg" alt="">
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="bg-black text-center h-100 project">
+                        <div class="d-flex h-100">
+                            <div class="project-text w-100 my-auto text-center text-lg-left">
+                                <h4 class="text-white">Ball</h4>
+                                <p class="mb-0 text-white-50">Come for a fancy night and a great time.</p>
+                                <hr class="d-none d-lg-block mb-0 ml-0">
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Event Two Row 
+                <div class="row justify-content-center no-gutters">
+                    <div class="col-lg-6">
+                        <img class="img-fluid" src="img/pubcrawl.webp" alt="">
+                    </div>
+                    <div class="col-lg-6 order-lg-first">
+                        <div class="bg-black text-center h-100 project">
+                        <div class="d-flex h-100">
+                            <div class="project-text w-100 my-auto text-center text-lg-right">
+                                <h4 class="text-white">Pub Crawl</h4>
+                                <p class="mb-0 text-white-50">Fun night out with friends!</p>
+                                <hr class="d-none d-lg-block mb-0 mr-0">
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div> -->
             </div>
-          </div>
-        </div>
-      </div> -->
+        </section>
 
-    </div>
-  </section>
-
-  <!-- Contact Section -->
-  <section class="contact-section bg-black">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-10 col-lg-8 mx-auto text-center">
-          <i class="far fa-paper-plane fa-2x mb-2 text-white"></i>
-          <h2 class="text-white mb-5">Contact Us</h2>
-        </div>
-      </div>
-  
-      <div class="row">
-        <div class="col-sm-4 mb-3 mb-md-0">
-          <div class="card py-4 h-100">
-            <div class="card-body text-center">
-              <i class="fab fa-facebook-square text-primary mb-2"></i>
-              <h4 class="text-uppercase m-0">Facebook</h4>
-              <hr class="my-4">
-              <div class="small text-black-50">
-                  <a href="https://www.facebook.com/coopsoc.unsw/">UNSW Co-op Society</a> 
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-sm-4 mb-3 mb-md-0">
-          <div class="card py-4 h-100">
-            <div class="card-body text-center">
-              <i class="fas fa-envelope text-primary mb-2"></i>
-              <h4 class="text-uppercase m-0">Email</h4>
-              <hr class="my-4">
-              <div class="small text-black-50">
-                coopsoc.unsw@gmail.com 
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-sm-4 mb-3 mb-md-0">
-          <div class="card py-4 h-100">
-            <div class="card-body text-center">
-              <i class="fab fa-linkedin-in text-primary mb-2"></i>
-              <h4 class="text-uppercase m-0">LinkedIn</h4>
-              <hr class="my-4">
-              <div class="small text-black-50">
-                <a href="https://www.linkedin.com/company/unsw-co-op-society">UNSW Co-op Society</a> 
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="bg-black small text-center text-white-50">
-    <div class="container">
-      Copyright &copy; UNSW Co-op Society
-    </div>
-  </footer>
-
-  <!-- Bootstrap core JavaScript -->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-  <!-- Plugin JavaScript -->
-  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-
-  <!-- Custom scripts for this template -->
-  <script src="js/grayscale.min.js"></script>
-
-</body>
-
+        <div id="footer"></div>
+    </body>
 </html>
