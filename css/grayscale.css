@@ -178,10 +178,6 @@
   padding-top: 5rem;
 }
 
-.about-section p {
-  margin-bottom: 5rem;
-}
-
 .projects-section {
   padding: 10rem 0;
 }
@@ -215,26 +211,6 @@
 
 .publications-section {
   padding: 5rem 0;
-}
-
-.signup-section {
-  padding: 10rem 0;
-  background: linear-gradient(to bottom, rgba(22, 22, 22, 0.1) 0%, rgba(22, 22, 22, 0.5) 75%, #161616 100%), url("../img/bg-signup.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-  background-size: cover;
-}
-
-.signup-section .form-inline input {
-  box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1) !important;
-  padding: 1.25rem 2rem;
-  height: auto;
-  font-family: 'Varela Round';
-  font-size: 80%;
-  text-transform: uppercase;
-  letter-spacing: 0.15rem;
-  border: 0;
 }
 
 .contact-section {
@@ -352,4 +328,44 @@ footer {
 
 .bigtitle {
   font-family: 'Inconsolata', monospace;
+}
+
+.about-responsive-heading {
+  font-size: 4vw;
+}
+  
+@media screen and (min-width: 1001px) {
+  p.about-role {
+    font-size: 1.5vw;
+  }
+  h4.about-name {
+    font-size: 2vw;
+  }
+  div.subcom {
+    max-width: 720px;
+  }
+  .about-section p {
+    margin-bottom: 5rem;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  p.about-section {
+    margin-bottom: 2rem;
+  }
+  p.about-role {
+    font-size: 1.5vw;
+  }
+  h4.about-name {
+    font-size: 2.5vw;
+  }
+  li.li-name, p.subcom-desc {
+    font-size: 2vw;
+  }
+  div.subcom {
+    max-width: 500px;
+  }
+  .about-section p {
+    margin-bottom: 2rem;
+  }
 }
