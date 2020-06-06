@@ -344,7 +344,7 @@ footer {
 
 @media screen and (min-width: 1301px) {
   p.about-role {
-    font-size: 1vw;
+    font-size: 0.5vw;
   }
   h4.about-name {
     font-size: 1.5vw;
