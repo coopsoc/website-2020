@@ -356,6 +356,9 @@ footer {
   .about-section p {
     margin-bottom: 5rem;
   }
+  h2.about-responsive-heading {
+    font-size: 2vw;
+  }
 }
 
 @media screen and (max-width: 1000px) {
