@@ -324,10 +324,6 @@ footer {
   font-family: 'Inconsolata', monospace;
 }
 
-.about-responsive-heading {
-  font-size: 4vw;
-}
-  
 @media screen and (min-width: 1001px) and (max-width: 1300px) {
   p.about-role {
     font-size: 1.5vw;
@@ -340,6 +336,9 @@ footer {
   }
   .about-section p {
     margin-bottom: 5rem;
+  }
+  h2.about-responsive-heading {
+    font-size: 4vw;
   }
 }
 
@@ -379,5 +378,8 @@ footer {
   }
   .about-section p {
     margin-bottom: 2rem;
+  }
+  h2.about-responsive-heading {
+    font-size: 4vw;
   }
 }
