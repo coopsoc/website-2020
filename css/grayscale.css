@@ -328,12 +328,27 @@ footer {
   font-size: 4vw;
 }
   
-@media screen and (min-width: 1001px) {
+@media screen and (min-width: 1001px) and (max-width: 1300px) {
   p.about-role {
     font-size: 1.5vw;
   }
   h4.about-name {
     font-size: 2vw;
+  }
+  div.subcom {
+    max-width: 720px;
+  }
+  .about-section p {
+    margin-bottom: 5rem;
+  }
+}
+
+@media screen and (min-width: 1301px) {
+  p.about-role {
+    font-size: 1.2vw;
+  }
+  h4.about-name {
+    font-size: 1.5vw;
   }
   div.subcom {
     max-width: 720px;
