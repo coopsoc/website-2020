@@ -323,7 +323,7 @@ footer {
 .bigtitle {
   font-family: 'Inconsolata', monospace;
 }
-
+/*
 @media screen and (min-width: 1001px) and (max-width: 1999px) {
   p.about-role {
     font-size: 1.5vw;
@@ -382,4 +382,28 @@ footer {
   h2.about-responsive-heading {
     font-size: 4vw;
   }
+}
+*/
+.meet-the-execs {
+  position: relative;
+}
+
+.meet-the-execs:hover .meet-the-execs-text {
+  opacity: 0.8;
+}
+
+.meet-the-execs-text {
+  color: white;
+  background: rgb(58, 58, 58);
+  opacity: 0;
+  font-size: 1.8vh;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 5% 5% 5% 5%;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  transition: .5 ease;
 }
