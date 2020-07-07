@@ -398,3 +398,7 @@ footer {
   width: 100%;
   transition: .5 ease;
 }
+
+.charity-event:hover {
+  opacity: 0.8;
+}
