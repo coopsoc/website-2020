@@ -323,58 +323,7 @@ footer {
 .bigtitle {
   font-family: 'Inconsolata', monospace;
 }
-/*
-@media screen and (min-width: 1001px) and (max-width: 1999px) {
-  h4.about-name {
-    font-size: 2vw;
-  }
-  div.subcom {
-    max-width: 720px;
-  }
-  .about-section p {
-    margin-bottom: 5rem;
-  }
-  h2.about-responsive-heading {
-    font-size: 4vw;
-  }
-}
 
-@media screen and (min-width: 2000px) {
-  h4.about-name {
-    font-size: 1.5vw;
-  }
-  div.subcom {
-    max-width: 720px;
-  }
-  .about-section p {
-    margin-bottom: 5rem;
-  }
-  h2.about-responsive-heading {
-    font-size: 2vw;
-  }
-}
-
-@media screen and (max-width: 1000px) {
-  p.about-section {
-    margin-bottom: 2rem;
-  }
-  h4.about-name {
-    font-size: 2.5vw;
-  }
-  li.li-name, p.subcom-desc {
-    font-size: 2vw;
-  }
-  div.subcom {
-    max-width: 500px;
-  }
-  .about-section p {
-    margin-bottom: 2rem;
-  }
-  h2.about-responsive-heading {
-    font-size: 4vw;
-  }
-}
-*/
 .meet-the-execs {
   position: relative;
 }
