@@ -397,7 +397,7 @@ h1 span {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  width: 80vw;
+  width: 50vw;
   height: 100px;
   max-width: 1000px;
   position: relative;
@@ -422,15 +422,15 @@ h1 span {
   top: 50%;
   transform: translateY(-50%);
   background-color: #2C3E50;
-  width: 4vw;
+  width: 25vw;
   height: 5px;
-  max-width: 50px;
+  max-width: 500px;
 }
 .input::before {
-  left: calc(-4vw + 12.5px);
+  left: calc(-25vw + 12.5px);
 }
 .input::after {
-  right: calc(-4vw + 12.5px);
+  right: calc(-25vw + 12.5px);
 }
 .input.active {
   background-color: #2C3E50;
@@ -483,7 +483,7 @@ h1 span {
 }
 
 .description-flex-container {
-  width: 80vw;
+  width: 50vw;
   font-weight: 400;
   font-size: 22px;
   margin-top: 100px;
@@ -497,13 +497,13 @@ h1 span {
   display: block;
 }
 
-@media (min-width: 1250px) {
+@media (min-width: 2000px) {
   .input::before {
-    left: -37.5px;
+    left: -487.5px;
   }
 
   .input::after {
-    right: -37.5px;
+    right: -487.5px;
   }
 }
 @media (max-width: 850px) {
@@ -515,10 +515,10 @@ h1 span {
     height: 3px;
   }
   .input::before {
-    left: calc(-4vw + 8.5px);
+    left: calc(-25vw + 8.5px);
   }
   .input::after {
-    right: calc(-4vw + 8.5px);
+    right: calc(-25vw + 8.5px);
   }
 }
 @media (max-width: 600px) {
