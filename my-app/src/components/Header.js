@@ -8,17 +8,30 @@ import {
 
 import Home from './Home'
 import Team from './Team'
+import Logo from './img/logo_small.png'
 
 function Header() {
 
   return (
     <Router>
         <header>
-            <nav>
-                <ul>
-                    <li> <Link to="/">Home</Link></li>
-                    <li> <Link to="/Team">Team</Link></li>
-                </ul>
+            <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+                <div class="container">
+                <Link to="/"><img src={Logo} width="60px"></img></Link>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <Link class="nav-link js-scroll-trigger" to="/Team">Team</Link>
+                    </li>
+                    <li class="nav-item">
+                        <Link class="nav-link js-scroll-trigger" to="/Team">Publications</Link>
+                    </li>
+                    <li class="nav-item">
+                        <Link class="nav-link js-scroll-trigger" to="/Team">Charity</Link>
+                    </li>
+                    </ul>
+                </div>
+                </div>
             </nav>
         </header>
         <Switch>
