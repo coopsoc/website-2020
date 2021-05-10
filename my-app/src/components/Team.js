@@ -29,7 +29,8 @@ import Susan_Image from './img/2020_exec/Susan.jpg'
 import Vincent_Image from './img/2020_exec/Vincent.jpg'
 
 // Fas Icons
-import { faDove } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBullhorn, faDesktop, faDove, faEdit, faUserFriends } from "@fortawesome/free-solid-svg-icons";
 
 function Team() {
   return (
@@ -291,7 +292,7 @@ function Team() {
                 <br></br>
                 <div class="row">
                     <div class="col-sm-8">
-                        <FontAwesomeIcon className="Dove" icon={faDove} size="1x"/>
+                        <FontAwesomeIcon className="Dove" icon={faDove} size="4x"/>
                         <div class="card-body text-center">
                             <h4 class="about-name">Charity</h4>
                             <p class="card-text subcom-desc">
@@ -313,7 +314,7 @@ function Team() {
                 <br></br>
                 <div class="row">
                     <div class="col-sm-8">
-                        <i class='fas fa-bullhorn mb-2' ></i>
+                    <FontAwesomeIcon className="Dove" icon={faBullhorn} size="4x"/>
                         <div class="card-body text-center">
                             <h4 class="about-name">Marketing</h4>
                             <p class="card-text subcom-desc">
@@ -337,8 +338,8 @@ function Team() {
                 <br></br>
                 <div class="row">
                     <div class="col-sm-8">
-                        <i class='fas fa-edit' ></i>
-                        <i class='fas fa-desktop' ></i>
+                        <FontAwesomeIcon className="Dove" icon={faEdit} size="4x" style={{margin: '10px'}}/>
+                        <FontAwesomeIcon className="Dove" icon={faDesktop} size="4x"/>
                         <div class="card-body text-center">
                             <h4 class="about-name">Publications/IT</h4>
                             <p class="card-text subcom-desc" >
@@ -360,7 +361,7 @@ function Team() {
                 <br></br>
                 <div class="row">
                     <div class="col-sm-8">
-                        <i class='fas fa-user-friends'></i>
+                        <FontAwesomeIcon className="Dove" icon={faUserFriends} size="4x" />
                         <div class="card-body text-center">
                             <h4 class="about-name">Social</h4>
                             <p class="card-text subcom-desc">
