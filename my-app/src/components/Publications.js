@@ -1,5 +1,9 @@
 import React from "react";
 
+import placement from './img/placement.jpg'
+import connected from './img/connected.jpg'
+import fyg from './img/fyg.jpg'
+
 function Publications() {
   return (
     <>
@@ -17,7 +21,7 @@ function Publications() {
                 <div class="row">
                     <div class="col-sm-6">
                         <div class="card border-light">
-                            <img class="card-img-top" src="/img/fyg.jpg"></img>
+                            <img src={fyg} class="card-img-top"></img>
                             <div class="card-body bg-light">
                                 <h5 class="card-title"><b>First Year Guide 2021</b></h5>
                                 <p class="card-text">First year Co-op? We've got you covered!</p><br />
@@ -28,7 +32,7 @@ function Publications() {
 
                     <div class="col-sm-6">
                         <div class="card border-light">
-                            <img class="card-img-top" src="/img/connected.jpg"></img>
+                            <img src={connected} class="card-img-top"></img>
                             <div class="card-body bg-light">
                                 <h5 class="card-title"><b>Social Distancing Without the Socially Distant.</b></h5>
                                 <p class="card-text">How can we stay connected during isolation?</p><br />
@@ -39,7 +43,7 @@ function Publications() {
 
                     <div class="col-sm-6">
                         <div class="card border-light">
-                            <img class="card-img-top" src="/img/placement.jpg"></img>
+                            <img src={placement} class="card-img-top"></img>
                             <div class="card-body bg-light">
                                 <h5 class="card-title"><b>First Placement Experiences</b></h5>
                                 <p class="card-text">Worried about placement and not sure what to expect? We've got you covered.</p>

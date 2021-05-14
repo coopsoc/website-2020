@@ -1,4 +1,7 @@
 import React from "react";
+import ball from './img/ball.jpg'
+import camp from './img/camp.jpg'
+import peer_mentoring from './img/peer_mentoring.jpg'
 
 function Home() {
   return (
@@ -10,7 +13,6 @@ function Home() {
         <div class="mx-auto text-center">
         <h1 class="mx-auto my-0 text-uppercase">UNSW Co-op Society</h1>
         <h2 class="mx-auto">A society for co-ops, by co-ops.</h2>
-        <a href="#events" class="btn btn-primary js-scroll-trigger">Our Events</a>
         </div>
     </div>
     </header>
@@ -19,7 +21,7 @@ function Home() {
         <div class="container">
             <div class="row align-items-center no-gutters mb-4 mb-lg-5">
                 <div class="col-xl-8 col-lg-7">
-                    <img class="img-fluid mb-3 mb-lg-0" src="img/camp.jpg" alt=""></img>
+                    <img src={camp} class="card-img-top"></img>     
                 </div>
                 <div class="col-xl-4 col-lg-5">
                     <div class="featured-text text-center text-lg-left">
@@ -31,7 +33,7 @@ function Home() {
 
             <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
                 <div class="col-lg-6">
-                    <img class="img-fluid" src="img/ball.jpg" alt=""></img>
+                    <img src={ball} class="card-img-top"></img>
                 </div>
                 <div class="col-lg-6">
                     <div class="bg-black text-center h-100 project">
@@ -48,7 +50,7 @@ function Home() {
 
             <div class="row justify-content-center no-gutters">
                 <div class="col-lg-6">
-                    <img class="img-fluid" src="img/peer_mentoring.jpg" alt=""></img>
+                    <img src={peer_mentoring} class="card-img-top"></img>  
                 </div>
                 <div class="col-lg-6 order-lg-first">
                     <div class="bg-black text-center h-100 project">

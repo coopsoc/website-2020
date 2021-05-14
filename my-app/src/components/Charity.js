@@ -1,4 +1,10 @@
 import React from "react";
+import sixKForWater from './img/charity-events/6k-for-water.jpg'
+import bloodDrive from './img/charity-events/blood-drive.jpg'
+import caseComp from './img/charity-events/case-comp.jpg'
+import greatestShave from './img/charity-events/greatest-shave.jpg'
+import hscWorkshop from './img/charity-events/hsc-workshops.jpg'
+import pokerNight from './img/charity-events/poker.jpg'
 
 function Charity() {
   return (
@@ -15,6 +21,8 @@ function Charity() {
 
     <section class="bg-light" >
         <div class="container">
+            <br></br>
+            <br></br>
             <div class="mb-4 mb-lg-4">
                 Co-op Soc merged with the Co-op Soc Charitable Society (CSCS) in 2018, and since then, the charity portfolio has been an integral way for Co-op scholars to give back to the community. 
 
@@ -27,16 +35,18 @@ function Charity() {
             <div class="row">
                 <div class="col-md-4 col-lg-6 mb-4 mb-lg-4 charity-event">
                     <a href="https://www.facebook.com/events/1464813253706083/">
-                        <img src="img/charity-events/case-comp.jpg" class="img-fluid" />
+                        <img src={caseComp} class="card-img-top"></img>
                     </a>
                 </div>
                 <div class="col-md-4 col-lg-6 mb-4 mb-lg-4 charity-event">
                     <a href="https://www.facebook.com/events/311139309863383/">
-                        <img src="img/charity-events/greatest-shave.jpg" class="img-fluid" />
+                        <img src={greatestShave} class="card-img-top"></img>
                     </a>
                 </div>
             </div>
         </div>
+        <br></br>
+        <br></br>
     </section>
     <section class="bg-white" >
         <div class="container">
@@ -44,28 +54,30 @@ function Charity() {
             <div class="row">
                 <div class="col-md-4 col-lg-6 mb-4 mb-lg-4 charity-event">
                     <a href="https://www.facebook.com/events/1190826104438705/">
-                        <img src="img/charity-events/poker.jpg" class="img-fluid" />
+                    <img src={pokerNight} class="card-img-top"></img>
                     </a>
                 </div>
                 <div class="col-md-4 col-lg-6 mb-4 mb-lg-4 charity-event">
                     <a href="https://www.facebook.com/events/870944186595660/">
-                        <img src="img/charity-events/blood-drive.jpg" class="img-fluid" />
+                        <img src={bloodDrive} class="card-img-top"></img>
                     </a>
                 </div>
                 <div class="col-md-4 col-lg-6 mb-4 mb-lg-4 charity-event">
                     <a href="https://www.facebook.com/events/440597310021840/">
-                        <img src="img/charity-events/6k-for-water.jpg" class="img-fluid" />
+                        <img src={sixKForWater} class="card-img-top"></img>
                     </a>
                 </div>
                 <div class="col-md-4 col-lg-6 mb-4 mb-lg-4 charity-event">
                     <a href="https://www.facebook.com/events/2137899859788914/">
-                        <img src="img/charity-events/hsc-workshops.jpg" class="img-fluid" />
+                        <img src={hscWorkshop} class="card-img-top"></img>
                     </a>
                 </div>
             </div>
         </div>
+        <br></br>
+        <br></br>
     </section>
-        
+
       </>
 
   );
