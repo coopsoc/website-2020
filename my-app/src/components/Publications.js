@@ -15,8 +15,9 @@ function Publications() {
                 </div>
             </div>
         </header>
-
         <section id="events" class="publications-section bg-light">
+        </section>
+        {/* <section id="events" class="publications-section bg-light">
             <div class="container">
                 <div class="row">
                     <div class="col-sm-6">
@@ -57,7 +58,7 @@ function Publications() {
                 
                 
             </div>
-        </section>
+        </section> */}
 
         
       </>

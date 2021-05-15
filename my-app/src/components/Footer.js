@@ -22,7 +22,7 @@ function Footer() {
                     <div class="col-sm-4 mb-3 mb-md-0">
                         <div class="card py-4 h-100">
                             <div class="card-body text-center">
-                                <FontAwesomeIcon className="Dove" icon={faFacebookSquare} />
+                                <FontAwesomeIcon className="footerIcon" icon={faFacebookSquare} />
                                 <i class="fab fa-facebook-square text-primary mb-2"></i>
                                 <h4 class="text-uppercase m-0">Facebook</h4>
                                 <hr class="my-4"></hr>
@@ -36,7 +36,7 @@ function Footer() {
                     <div class="col-sm-4 mb-3 mb-md-0">
                         <div class="card py-4 h-100">
                             <div class="card-body text-center">
-                                <FontAwesomeIcon className="Dove" icon={faEnvelope} />
+                                <FontAwesomeIcon className="footerIcon" icon={faEnvelope} />
                                 <h4 class="text-uppercase m-0">Email</h4>
                                 <hr class="my-4"></hr>
                                 <div class="small text-black-50">
@@ -49,7 +49,7 @@ function Footer() {
                     <div class="col-sm-4 mb-3 mb-md-0">
                         <div class="card py-4 h-100">
                             <div class="card-body text-center">
-                                <FontAwesomeIcon className="Dove" icon={faLinkedinIn} />  
+                                <FontAwesomeIcon className="footerIcon" icon={faLinkedinIn} />  
                                 <h4 class="text-uppercase m-0">LinkedIn</h4>
                                 <hr class="my-4"></hr>
                                 <div class="small text-black-50">
