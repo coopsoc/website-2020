@@ -34,7 +34,8 @@ import { faBullhorn, faDesktop, faDove, faEdit, faUserFriends } from "@fortaweso
 
 // Timeline
 import Slider from '@material-ui/core/Slider'
-import { withStyles, makeStyles } from '@material-ui/core/styles';
+import { createMuiTheme } from '@material-ui/core/styles';
+import { ThemeProvider } from '@material-ui/styles';
 
 function Team() {
 
@@ -44,44 +45,25 @@ function Team() {
 
     const [year, setYear] = React.useState(2021)
 
-    const useStyles = makeStyles({
-        root: {
-          width: 100,
-        },
+    const muiTheme = createMuiTheme({
+        overrides:{
+          MuiSlider: {
+            thumb:{
+            color: "#64a19d",
+            },
+            track: {
+                color: '#64a19d',
+            },
+            rail: {
+              color: '#64a19d'
+            },
+            root: {
+                width: '500px'
+            }
+          }
+      }
       });
 
-      const CustomSlider = withStyles({
-        root: {
-          color: '#64a19d',
-          height: 8,
-          width: '70%',
-        },
-        thumb: {
-          height: 24,
-          width: 24,
-          backgroundColor: '#fff',
-          border: '2px solid currentColor',
-          marginTop: -8,
-          marginLeft: -12,
-          '&:focus, &:hover, &$active': {
-            boxShadow: 'inherit',
-          },
-        },
-        active: {},
-        valueLabel: {
-          left: 'calc(-50% + 4px)',
-        },
-        track: {
-          height: 8,
-          borderRadius: 4,
-        },
-        rail: {
-          height: 8,
-          borderRadius: 4,
-        },
-      })(Slider);
-
-      
       const years = [
         {
           value: 0,
@@ -103,10 +85,11 @@ function Team() {
       };
 
     function renderYear() {
-        if (year == "2021") {
-            return team_2021()
-        } else {
+        if (year == "0") {
             return team_2020()
+            
+        } else {
+            return team_2021()
         }
         
     }
@@ -114,10 +97,8 @@ function Team() {
     function team_2021() {
         return (
             <>
-            <section class="about-section text-center bg-white pb-sm-5">
+            <section id="about" class="about-section text-center bg-light pb-md-5">
             <div class="container">
-                
-                <br></br>
                 <h2 class="about-responsive-heading pb-md-4">Executives</h2>
                 <div class="row justify-content-center">
                     <div class="col-md-4">
@@ -783,15 +764,20 @@ function Team() {
             </div>
           </header>
 
-            
-            <CustomSlider
-                defaultValue={year}
-                valueLabelFormat={valuetext}
-                aria-labelledby="discrete-slider-restrict"
-                step={null}
-                onChange={(_, value) => handleYear(valueToYear[value])}
-                marks={years}
-            />
+          <section id="about" class="about-section text-center bg-light pb-md-5">
+          <ThemeProvider theme={muiTheme}>
+                <Slider
+                    defaultValue={100}
+                    aria-labelledby="discrete-slider"
+                    step={null}
+                    marks={years}
+                    onChange={(_, value) =>
+                        handleYear(value)
+                    }
+                />
+            </ThemeProvider>
+            </section>
+
             {renderYear()}
             
 
