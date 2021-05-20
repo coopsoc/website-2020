@@ -12,3 +12,52 @@ code {
     monospace;
 }
 
+/* Styling for the Masonry feed */
+
+#feed {
+  margin: 20px;
+}
+
+#masonry {
+  display: -webkit-box; /* Not needed if autoprefixing */
+  display: -ms-flexbox; /* Not needed if autoprefixing */
+  display: flex;
+  margin-left: -20px; /* gutter size offset */
+  width: auto;
+
+  margin-top: 20px;
+}
+
+.masonryColumn {
+  padding-left: 20px; /* gutter size */
+  background-clip: padding-box;
+}
+
+.masonryCell { /* change div to reference your elements you put in <Masonry> */
+  position: relative;
+  background: grey;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+.masonryCell > .content {
+  padding-bottom: 24px;
+}
+
+.masonryCell img {
+  width: 100%;
+}
+
+.masonryCell > .timeLabel {
+  position: absolute;
+  bottom: 8px;
+  left: 8px;
+  margin: 0;
+  color: darkgrey;
+}
+
+.masonryCell > .cellOrigin {
+  position: absolute;
+  bottom: 8px;
+  right: 8px;
+}
