@@ -11,14 +11,12 @@ import sampleData from "./resources/samplePosts.js";
 
 dayjs.extend(customParseFormat);
 
-function timeAgo(date) {
-  const now = dayjs();
-  
-  if (now.isBefore(date)) {
+function timeAgo(date, startTime) {
+  if (startTime.isBefore(date)) {
     return "In the future";
   }
 
-  const difference = now.diff(date, "minutes");
+  const difference = startTime.diff(date, "minutes");
 
   if (difference < 60) {
     // Less than an hour ago
@@ -27,7 +25,7 @@ function timeAgo(date) {
     // Less than a day ago
     return `${Math.floor(difference / 60)} hours ago`;
   } else {
-    const monthDifference = now.diff(date, "months");
+    const monthDifference = startTime.diff(date, "months");
 
     if (monthDifference === 0) {
       // Less than a month ago
@@ -41,7 +39,7 @@ function timeAgo(date) {
   }
 }
 
-function toComponent(item, key) {
+function toComponent(item, key, startTime) {
   let icon;
 
   switch (item.origin) {
@@ -62,13 +60,14 @@ function toComponent(item, key) {
         <p>{item.description}</p>
         <img src={item.image} />
       </div>
-      <p className="timeLabel text-uppercase">{timeAgo(item.time)}</p>
+      <p className="timeLabel text-uppercase">{timeAgo(item.time, startTime)}</p>
       <FontAwesomeIcon className="cellOrigin" icon={icon}/>
     </div>
   );
 }
 
 function Home() {
+  const [time, setTime] = useState(dayjs());
   const [items, setItems] = useState([]);
 
   // componentDidMount equivalent
@@ -83,6 +82,7 @@ function Home() {
     });
 
     setItems(sortedItems);
+    setTime(dayjs());
   }, []);
 
   return (
@@ -104,7 +104,7 @@ function Home() {
           id="masonry"
           className="masonryClass"
           columnClassName="masonryColumn">
-          {items.map((item, index) => toComponent(item, index))}
+          {items.map((item, index) => toComponent(item, index, time))}
         </Masonry>
       </div>
 

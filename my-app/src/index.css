@@ -26,6 +26,9 @@ code {
   width: auto;
 
   margin-top: 20px;
+  padding: 10px;
+  max-height: 500px;
+  overflow-y: scroll;
 }
 
 .masonryColumn {
@@ -35,9 +38,10 @@ code {
 
 .masonryCell { /* change div to reference your elements you put in <Masonry> */
   position: relative;
-  background: grey;
+  background: lightgray;
   margin-bottom: 20px;
-  padding: 10px;
+  padding: 20px;
+  border-radius: 10px;
 }
 
 .masonryCell > .content {
@@ -51,13 +55,13 @@ code {
 .masonryCell > .timeLabel {
   position: absolute;
   bottom: 8px;
-  left: 8px;
+  left: 12px;
   margin: 0;
   color: darkgrey;
 }
 
 .masonryCell > .cellOrigin {
   position: absolute;
-  bottom: 8px;
-  right: 8px;
+  bottom: 12px;
+  right: 12px;
 }
