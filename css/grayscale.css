@@ -1,3 +1,9 @@
+/*!
+ * Start Bootstrap - UNSW Co-op Society v5.0.9 (https://coopsoc.github.io/coopsoc/)
+ * Copyright 2013-2021 Coopsoc
+ * Licensed under MIT (https://github.com/BlackrockDigital/coopsoc/blob/master/LICENSE)
+ */
+
 #mainNav {
   min-height: 56px;
   background-color: #fff;
@@ -36,17 +42,20 @@
     padding-top: 0;
     padding-bottom: 0;
     border-bottom: none;
+    background-color: transparent;
+    transition: background-color 0.3s ease-in-out;
   }
   #mainNav .navbar-brand {
     padding: .5rem 0;
+    color: rgba(255, 255, 255, 0.5);
   }
   #mainNav .nav-link {
     transition: none;
     padding: 2rem 1.5rem;
-    color: black;
+    color: rgba(255, 255, 255, 0.5);
   }
   #mainNav .nav-link:hover {
-    color: #64a19d;
+    color: rgba(255, 255, 255, 0.75);
   }
   #mainNav .nav-link:active {
     color: white;
@@ -81,7 +90,7 @@
   height: auto;
   min-height: 35rem;
   padding: 15rem 0;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/background.jpg");
+  background: linear-gradient(to bottom, rgba(22, 22, 22, 0.3) 0%, rgba(22, 22, 22, 0.7) 75%, #161616 100%), url("../img/bg-masthead.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -89,17 +98,18 @@
 }
 
 .masthead h1 {
-  font-family: 'Roboto';
+  font-family: 'Varela Round';
   font-size: 2.5rem;
   line-height: 2.5rem;
   letter-spacing: 0.8rem;
-  color: white;
+  background: -webkit-linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0));
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
 }
 
 .masthead h2 {
   max-width: 20rem;
   font-size: 1rem;
-  color: white;
 }
 
 @media (min-width: 768px) {
@@ -125,26 +135,10 @@
   }
 }
 
-.masthead-pubs {
-  position: relative;
-  width: 100%;
-  height: auto;
-  min-height: 10rem;
-  padding: 10rem 0;
-}
-
-.masthead-pubs h1 {
-  font-family: 'Roboto';
-  font-size: 2.5rem;
-  line-height: 2.5rem;
-  letter-spacing: 0.8rem;
-  color: black;
-}
-
 .btn {
   box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1) !important;
   padding: 1.25rem 2rem;
-  font-family: 'Roboto';
+  font-family: 'Varela Round';
   font-size: 80%;
   text-transform: uppercase;
   letter-spacing: .15rem;
@@ -169,7 +163,12 @@
 }
 
 .about-section {
-  padding-top: 5rem;
+  padding-top: 10rem;
+  background: linear-gradient(to bottom, #161616 0%, rgba(22, 22, 22, 0.9) 75%, rgba(22, 22, 22, 0.8) 100%);
+}
+
+.about-section p {
+  margin-bottom: 5rem;
 }
 
 .projects-section {
@@ -203,8 +202,24 @@
   }
 }
 
-.publications-section {
-  padding: 5rem 0;
+.signup-section {
+  padding: 10rem 0;
+  background: linear-gradient(to bottom, rgba(22, 22, 22, 0.1) 0%, rgba(22, 22, 22, 0.5) 75%, #161616 100%), url("../img/bg-signup.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+}
+
+.signup-section .form-inline input {
+  box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1) !important;
+  padding: 1.25rem 2rem;
+  height: auto;
+  font-family: 'Varela Round';
+  font-size: 80%;
+  text-transform: uppercase;
+  letter-spacing: 0.15rem;
+  border: 0;
 }
 
 .contact-section {
@@ -218,8 +233,9 @@
 
 .contact-section .card h4 {
   font-size: 0.8rem;
-  font-family: 'Roboto';
+  font-family: 'Varela Round';
   text-transform: uppercase;
+  letter-spacing: 0.15rem;
 }
 
 .contact-section .card hr {
@@ -251,7 +267,7 @@
 }
 
 body {
-  font-family: 'Roboto';
+  font-family: 'Nunito';
   letter-spacing: 0.0625em;
 }
 
@@ -278,84 +294,4 @@ a:focus, a:hover {
 
 footer {
   padding: 5rem 0;
-}
-
-.col-xs-5ths,
-.col-sm-5ths,
-.col-md-5ths,
-.col-lg-5ths {
-    position: relative;
-    min-height: 1px;
-    padding-right: 10px;
-    padding-left: 10px;
-}
-
-.col-xs-5ths {
-    width: 20%;
-    float: left;
-}
-
-@media (min-width: 768px) {
-    .col-sm-5ths {
-        width: 20%;
-        float: left;
-    }
-}
-
-@media (min-width: 992px) {
-    .col-md-5ths {
-        width: 20%;
-        float: left;
-    }
-}
-
-@media (min-width: 1200px) {
-    .col-lg-5ths {
-        width: 20%;
-        float: left;
-    }
-}
-
-.team {
-  color: black;
-}
-
-.bigtitle {
-  font-family: 'Inconsolata', monospace;
-}
-
-.meet-the-execs {
-  position: relative;
-}
-
-.meet-the-execs:hover .meet-the-execs-text {
-  opacity: 0.8;
-}
-
-.meet-the-execs-text {
-  color: white;
-  background: rgb(58, 58, 58);
-  opacity: 0;
-  font-size: 12px;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  padding: 5% 5% 5% 5%;
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  transition: .5 ease;
-}
-
-.charity-event:hover {
-  opacity: 0.8;
-}
-
-.vertical-center {
-  margin: 0;
-  position: absolute;
-  top: 50%;
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
 }
