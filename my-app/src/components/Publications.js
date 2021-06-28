@@ -11,25 +11,8 @@ import {
     Link
   } from "react-router-dom";
 
-// pdf viewer
-import { Viewer } from '@react-pdf-viewer/core';
-import { defaultLayoutPlugin } from '@react-pdf-viewer/default-layout';
-import '@react-pdf-viewer/core/lib/styles/index.css';
-import '@react-pdf-viewer/default-layout/lib/styles/index.css';
-
-import { Document, Page, pdfjs } from 'react-pdf';
-import fygPDF from './img/FYG2021.pdf';
-pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
-
 function Publications() {
 
-    const defaultLayoutPluginInstance = defaultLayoutPlugin();
-
-    const [numPages, setNumPages] = useState(0);
-    const [pageNumber, setPageNumber] = useState(1);
-    function onDocumentLoadSuccess({ numPages }) {
-        setNumPages(numPages);
-    }
 
   return (
     <>
@@ -42,10 +25,15 @@ function Publications() {
             </div>
         </header>
         <section id="events" class="publications-section bg-light">
-
-        </section>
-        <section id="events" class="publications-section bg-light">
             <div class="container">
+                <div class="mb-4 mb-lg-4">
+                A central part of the Co-op society is the Publications portfolio who helps provide additional professional support for our Co-op scholars. 
+                Our work includes the First Year Guide, writing blogs and now an upcoming podcast with alumni who have stories to share. 
+                Together, our goal is to create a platform in which scholars past and present can share their experiences, learn something new, and stay connected.
+                </div>
+                <br></br>
+
+
                 <div class="row">
                     <div class="col-sm-6">
                         <div class="card border-light">
@@ -69,7 +57,14 @@ function Publications() {
                         </div>
                     </div>
 
-                    {/* <div class="col-sm-6">
+
+                </div>
+                <div class="row">
+                    <br></br>
+                    <br></br>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6">
                         <div class="card border-light">
                             <img src={placement} class="card-img-top"></img>
                             <div class="card-body bg-light">
@@ -78,7 +73,7 @@ function Publications() {
                                 <Link class="btn btn-dark" to="/Publications/placementExperience">Read more</Link>
                             </div>
                         </div>
-                    </div> */}
+                    </div>
 
                 </div>
                 

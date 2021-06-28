@@ -35,12 +35,13 @@ function PlacementExp() {
     
             <section id="publications" class="publications-section bg-light pb-md-4">
         <div class="container pb-md-4">
-            <h1 class="display-4 text-center pb-md-4">
+            <h1 class="display-5 text-center pb-md-4">
                 Industry Placement Experiences
             </h1>
             <p class="text-center">
                 Read about each 2020 Exec's experience in their placements, and use their tips and tricks to get yourself prepared!
             </p>
+            <br></br>
             <div class="row justify-content-center pb-md-4">
                 <div class="col-sm-6 col-md-4">
                     <div class="card">
@@ -151,6 +152,7 @@ function PlacementExp() {
                                             <span aria-hidden="true">&times;</span>
                                         </button>
                                     </div>
+                                    <br></br>
                                     <div class="text-center pb-md-4">
                                         <img src={CocaCola_Image} class="img-fluid"  style={{width: '12rem'}}></img>
                                     </div>
@@ -345,6 +347,7 @@ function PlacementExp() {
                                         <span aria-hidden="true">&times;</span>
                                     </button>
                                 </div>
+                                <br></br>
                                 <div class="text-center">
                                     <img src={Amex_Image} class="img-fluid pb-md-4"  style={{width: '15rem'}}></img>
                                 </div>
