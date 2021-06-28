@@ -12,6 +12,10 @@ import Events from './Events'
 import Publications from './Publications'
 import Team from './Team'
 import Logo from './img/logo_small.png'
+import FirstYearGuide from './FirstYearGuide'
+import PlacementExp from './PlacementExp'
+import StayingConnected from './StayingConnected'
+import ScrollToTop from 'react-router-scroll-top'
 
 function Header() {
 
@@ -40,13 +44,18 @@ function Header() {
                 </div>
             </nav>
         </header>
+        <ScrollToTop>
         <Switch>
             <Route path="/Team"><Team /> </Route>
             <Route path="/Events"><Events /> </Route>
+            <Route path="/Publications/fyg"><FirstYearGuide /> </Route>
+            <Route path="/Publications/placementExperience"><PlacementExp/> </Route>
+            <Route path="/Publications/stayingConnected"><StayingConnected /> </Route>
             <Route path="/Publications"><Publications /> </Route>
             <Route path="/Charity"><Charity /> </Route>
             <Route path="/"><Home /> </Route>
         </Switch>
+        </ScrollToTop>
       </Router>
   );
 }

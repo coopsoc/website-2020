@@ -3,7 +3,7 @@ import React from "react";
 // 2021 Team Images
 import Kenuka_Image from './img/2021_exec/Kenuka.jpg'
 import Celine_Image from './img/2021_exec/Celine.jpg'
-import Kai_Image from './img/2021_exec/Kai.jpg'
+import Kai_Image from './img/2021_exec/Kai.jpeg'
 import Connor_Image from './img/2021_exec/Connor.jpg'
 import Micah_Image from './img/2021_exec/Micah.jpg'
 import Jasmin_Image from './img/2021_exec/Jasmin.jpeg'
@@ -91,7 +91,6 @@ function Team() {
         } else {
             return team_2021()
         }
-        
     }
 
     function team_2021() {
@@ -387,7 +386,6 @@ function Team() {
                         </div>
                     </div>
                 </div>
-                <br></br>
                 <div class="row">
                     <div class="col-sm-8">
                         <FontAwesomeIcon className="Dove" icon={faEdit} size="4x" style={{margin: '10px'}}/>
@@ -402,6 +400,7 @@ function Team() {
                     <div class="col-sm-4">
                         <div class="card-body text-center">
                             <ul class="list-group">
+                                <br></br>
                                 <li class="list-group-item border-0 li-name"><b>Members:</b></li>
                                 <li class="list-group-item border-0 li-name">Annie Yan</li>
                                 <li class="list-group-item border-0 li-name">Hanyuan Li</li>
@@ -423,6 +422,7 @@ function Team() {
                     </div>
                     <div class="col-sm-4">
                             <ul class="list-group">
+                                <br></br>
                                 <li class="list-group-item border-0 li-name"><b>Members:</b></li>
                                 <li class="list-group-item border-0 li-name">Isabella Fang</li>
                                 <li class="list-group-item border-0 li-name">Jessica Degeling</li>

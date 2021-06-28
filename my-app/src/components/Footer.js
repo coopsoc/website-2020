@@ -62,7 +62,11 @@ function Footer() {
             </div>
         </section>
 
+
         <footer class="bg-black small text-center text-white-50">
+        <div class="container">
+            <a className="footerLink" href="https://www.coopsoc.com.au/Constitution.pdf">Constitution</a> | <a className="footerLink" href="https://www.coopsoc.com.au/Grievance-Resolution-Policy-Procedure.pdf">Grievance Policy </a>
+        </div>
             <div class="container">
                 Copyright &copy; UNSW Co-op Society
             </div>
