@@ -21,7 +21,7 @@
     "react-responsive-modal": "^6.1.0",
     "react-router-dom": "^5.2.0",
     "react-router-scroll-top": "^0.2.1",
-    "react-scripts": "^4.0.3",
+    "react-scripts": "^1.1.5",
     "typeface-roboto": "^1.1.13",
     "web-vitals": "^1.1.1"
   },
@@ -48,5 +48,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^3.2.3"
   }
 }

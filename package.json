@@ -3,7 +3,9 @@
     "name": "coopsoc",
     "version": "5.0.9",
     "scripts": {
-        "start": "node_modules/.bin/gulp watch"
+        "start": "node_modules/.bin/gulp watch",
+        "predeploy": "npm run build",
+        "deploy": "gh-pages -d build"
     },
     "description": "A grayscale one page HTML theme for Bootstrap.",
     "keywords": [
@@ -19,7 +21,8 @@
     "license": "MIT",
     "author": "Coopsoc",
     "contributors": [
-        "Vincent Chen"
+        "Vincent Chen",
+        "Noa Challis"
     ],
     "repository": {
         "type": "git",
